@@ -20,6 +20,10 @@ body {
 .skilled-container {
     width: 80%;
     margin: auto;
+
+    @media(max-width:1024px) {
+        width: 95%;
+    }
 }
 
 .get-started-button {
@@ -28,6 +32,11 @@ body {
     padding-inline: 32px;
     cursor: pointer;
     transition: 0.2s all ease-in;
+
+    @media(max-width:768px) {
+        padding-block: 9px;
+        padding-inline: 24px;
+    }
 
     &:hover {
         transform: scale(1.05);
@@ -38,18 +47,62 @@ body {
         font-size: 18px;
         line-height: 28px;
         color: #FFFFFF;
+
+        @media(max-width:768px) {
+            font-size: 16px;
+        }
     }
 }
 
 .skilled-e-learning-landing-page {
 
     .header-hero-section {
-        background: url(assets/image-hero-desktop@2x.webp);
-        background-repeat: no-repeat;
-        background-size: 990px;
-        background-position-x: 170%;
-        background-position-y: 65%;
-        padding-bottom: 120px;
+        position: relative;
+        overflow: hidden;
+        padding-bottom: 110px;
+
+        @media(max-width:768px)
+        {
+         padding-bottom: 80px;
+        }
+
+        @media(max-width:576px)
+        {
+         padding-bottom: 0px;
+        }
+
+        .hero-bg {
+            position: absolute;
+            width: 75%;
+            top: -27%;
+            right: -27%;
+
+            @media(max-width:1350px) {
+                top: -14%;
+            }
+
+            @media(max-width:1024px) {
+                top: -3%;
+            }
+
+            @media(max-width:900px) {
+                top: 5%;
+            }
+
+            @media(max-width:768px) {
+                width: 80%;
+                right: -32%;
+            }
+
+            @media(max-width:650px) {
+                top: 15%;
+            }
+
+            @media(max-width:576px)
+            {
+             display: none;
+            }
+        }
     }
 
     header {
@@ -57,6 +110,7 @@ body {
 
         .header-button {
             background: #13183F;
+            z-index: 9999;
 
             &:hover {
                 background: #666CA3;
@@ -67,22 +121,47 @@ body {
     .hero {
         padding-top: 172px;
 
-        .hero-content {
+        @media(max-width:1024px) {
+            padding-top: 130px;
+        }
 
+        @media(max-width:768px) {
+            padding-top: 99px;
+        }
+
+        @media(max-width:675px) {
+            padding-top: 50px;
+        }
+
+        @media(max-width:576px)
+        {
+         padding-top: 40px;
+        }
+
+        .hero-content {
             width: 40%;
+
+            @media(max-width:1430px) {
+                width: 50%;
+            }
+
+            @media(max-width:576px)
+            {
+             width: 70%;
+            }
 
             h1 {
                 font-weight: 800;
-                font-size: 56px;
-                line-height: 71px;
+                font-size: clamp(40px, 4vw, 56px);
+                line-height: clamp(50px, 5.75vw, 71px);
                 color: #13183F;
                 margin-bottom: 29px;
             }
 
             p {
                 font-weight: 500;
-                font-size: 18px;
-                line-height: 28px;
+                font-size: clamp(16px, 1.5vw, 18px);
+                line-height: clamp(26px, 2.6vw, 28px);
                 color: #83869A;
                 margin-bottom: 40px;
             }
@@ -98,15 +177,38 @@ body {
         }
     }
 
+    .mobile-image{
+        margin-top: 46px;
+    }
+
     .main {
         margin-top: 250px;
         background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
+
+        @media(max-width:1024px)
+        {
+         margin-top: 175px;
+        }
+
+        @media(max-width:768px)
+        {
+         margin-top: 100px;
+        }
+
+        @media(max-width:576px)
+        {
+         margin-top: 66px;
+        }
 
         .main-content {
             gap: 30px;
             flex-wrap: wrap;
             row-gap: 64px;
             padding-bottom: 140px;
+
+            @media(max-width:1024px) {
+                gap: 16px;
+            }
 
             .course {
                 border-radius: 15px;
@@ -119,6 +221,14 @@ body {
                 flex-direction: column;
                 justify-content: space-between;
                 gap: 24px;
+
+                @media(max-width:1365px) {
+                    flex-basis: 48.5%;
+                }
+
+                @media(max-width:1250px) {
+                    flex-basis: 48%;
+                }
 
                 .icon {
                     margin-top: -16px;
@@ -140,6 +250,16 @@ body {
                     color: #83869A;
                     width: 80%;
                     min-height: 112px;
+
+                    @media(max-width:768px)
+                    {
+                     min-height: 150px;
+                    }
+
+                    @media(max-width:640px)
+                    {
+                    min-height: 175px;
+                    }
                 }
 
                 .course-link {
@@ -167,6 +287,14 @@ body {
                         padding-inline: 32px;
                         padding-top: 64px;
                         padding-bottom: 98px;
+
+                        @media(max-width:1365px) {
+                            width: 73%;
+                        }
+
+                        @media(max-width:1116px) {
+                            width: 90%;
+                        }
                     }
                 }
             }

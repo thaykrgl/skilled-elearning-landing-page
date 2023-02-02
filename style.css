@@ -21,6 +21,11 @@ body {
   width: 80%;
   margin: auto;
 }
+@media (max-width: 1024px) {
+  .skilled-container {
+    width: 95%;
+  }
+}
 
 .get-started-button {
   border-radius: 28px;
@@ -28,6 +33,12 @@ body {
   padding-inline: 32px;
   cursor: pointer;
   transition: 0.2s all ease-in;
+}
+@media (max-width: 768px) {
+  .get-started-button {
+    padding-block: 9px;
+    padding-inline: 24px;
+  }
 }
 .get-started-button:hover {
   transform: scale(1.05);
@@ -38,20 +49,70 @@ body {
   line-height: 28px;
   color: #FFFFFF;
 }
+@media (max-width: 768px) {
+  .get-started-button a {
+    font-size: 16px;
+  }
+}
 
 .skilled-e-learning-landing-page .header-hero-section {
-  background: url(assets/image-hero-desktop@2x.webp);
-  background-repeat: no-repeat;
-  background-size: 990px;
-  background-position-x: 170%;
-  background-position-y: 65%;
-  padding-bottom: 120px;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 110px;
+}
+@media (max-width: 768px) {
+  .skilled-e-learning-landing-page .header-hero-section {
+    padding-bottom: 80px;
+  }
+}
+@media (max-width: 576px) {
+  .skilled-e-learning-landing-page .header-hero-section {
+    padding-bottom: 0px;
+  }
+}
+.skilled-e-learning-landing-page .header-hero-section .hero-bg {
+  position: absolute;
+  width: 75%;
+  top: -27%;
+  right: -27%;
+}
+@media (max-width: 1350px) {
+  .skilled-e-learning-landing-page .header-hero-section .hero-bg {
+    top: -14%;
+  }
+}
+@media (max-width: 1024px) {
+  .skilled-e-learning-landing-page .header-hero-section .hero-bg {
+    top: -3%;
+  }
+}
+@media (max-width: 900px) {
+  .skilled-e-learning-landing-page .header-hero-section .hero-bg {
+    top: 5%;
+  }
+}
+@media (max-width: 768px) {
+  .skilled-e-learning-landing-page .header-hero-section .hero-bg {
+    width: 80%;
+    right: -32%;
+  }
+}
+@media (max-width: 650px) {
+  .skilled-e-learning-landing-page .header-hero-section .hero-bg {
+    top: 15%;
+  }
+}
+@media (max-width: 576px) {
+  .skilled-e-learning-landing-page .header-hero-section .hero-bg {
+    display: none;
+  }
 }
 .skilled-e-learning-landing-page header {
   padding-top: 24px;
 }
 .skilled-e-learning-landing-page header .header-button {
   background: #13183F;
+  z-index: 9999;
 }
 .skilled-e-learning-landing-page header .header-button:hover {
   background: #666CA3;
@@ -59,20 +120,50 @@ body {
 .skilled-e-learning-landing-page .hero {
   padding-top: 172px;
 }
+@media (max-width: 1024px) {
+  .skilled-e-learning-landing-page .hero {
+    padding-top: 130px;
+  }
+}
+@media (max-width: 768px) {
+  .skilled-e-learning-landing-page .hero {
+    padding-top: 99px;
+  }
+}
+@media (max-width: 675px) {
+  .skilled-e-learning-landing-page .hero {
+    padding-top: 50px;
+  }
+}
+@media (max-width: 576px) {
+  .skilled-e-learning-landing-page .hero {
+    padding-top: 40px;
+  }
+}
 .skilled-e-learning-landing-page .hero .hero-content {
   width: 40%;
 }
+@media (max-width: 1430px) {
+  .skilled-e-learning-landing-page .hero .hero-content {
+    width: 50%;
+  }
+}
+@media (max-width: 576px) {
+  .skilled-e-learning-landing-page .hero .hero-content {
+    width: 70%;
+  }
+}
 .skilled-e-learning-landing-page .hero .hero-content h1 {
   font-weight: 800;
-  font-size: 56px;
-  line-height: 71px;
+  font-size: clamp(40px, 4vw, 56px);
+  line-height: clamp(50px, 5.75vw, 71px);
   color: #13183F;
   margin-bottom: 29px;
 }
 .skilled-e-learning-landing-page .hero .hero-content p {
   font-weight: 500;
-  font-size: 18px;
-  line-height: 28px;
+  font-size: clamp(16px, 1.5vw, 18px);
+  line-height: clamp(26px, 2.6vw, 28px);
   color: #83869A;
   margin-bottom: 40px;
 }
@@ -83,15 +174,38 @@ body {
 .skilled-e-learning-landing-page .hero .hero-content .hero-button:hover {
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
 }
+.skilled-e-learning-landing-page .mobile-image {
+  margin-top: 46px;
+}
 .skilled-e-learning-landing-page .main {
   margin-top: 250px;
   background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
+}
+@media (max-width: 1024px) {
+  .skilled-e-learning-landing-page .main {
+    margin-top: 175px;
+  }
+}
+@media (max-width: 768px) {
+  .skilled-e-learning-landing-page .main {
+    margin-top: 100px;
+  }
+}
+@media (max-width: 576px) {
+  .skilled-e-learning-landing-page .main {
+    margin-top: 66px;
+  }
 }
 .skilled-e-learning-landing-page .main .main-content {
   gap: 30px;
   flex-wrap: wrap;
   row-gap: 64px;
   padding-bottom: 140px;
+}
+@media (max-width: 1024px) {
+  .skilled-e-learning-landing-page .main .main-content {
+    gap: 16px;
+  }
 }
 .skilled-e-learning-landing-page .main .main-content .course {
   border-radius: 15px;
@@ -104,6 +218,16 @@ body {
   flex-direction: column;
   justify-content: space-between;
   gap: 24px;
+}
+@media (max-width: 1365px) {
+  .skilled-e-learning-landing-page .main .main-content .course {
+    flex-basis: 48.5%;
+  }
+}
+@media (max-width: 1250px) {
+  .skilled-e-learning-landing-page .main .main-content .course {
+    flex-basis: 48%;
+  }
 }
 .skilled-e-learning-landing-page .main .main-content .course .icon {
   margin-top: -16px;
@@ -122,6 +246,16 @@ body {
   color: #83869A;
   width: 80%;
   min-height: 112px;
+}
+@media (max-width: 768px) {
+  .skilled-e-learning-landing-page .main .main-content .course p {
+    min-height: 150px;
+  }
+}
+@media (max-width: 640px) {
+  .skilled-e-learning-landing-page .main .main-content .course p {
+    min-height: 175px;
+  }
 }
 .skilled-e-learning-landing-page .main .main-content .course .course-link a {
   font-weight: 700;
@@ -144,6 +278,16 @@ body {
   padding-inline: 32px;
   padding-top: 64px;
   padding-bottom: 98px;
+}
+@media (max-width: 1365px) {
+  .skilled-e-learning-landing-page .main .main-content .course.course-introducer h3 {
+    width: 73%;
+  }
+}
+@media (max-width: 1116px) {
+  .skilled-e-learning-landing-page .main .main-content .course.course-introducer h3 {
+    width: 90%;
+  }
 }
 .skilled-e-learning-landing-page footer {
   background: #13183F;
