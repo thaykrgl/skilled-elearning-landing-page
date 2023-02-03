@@ -34,7 +34,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Frontend Mentor](https://www.frontendmentor.io/profile/thaykrgl)
-- Live Site URL: [Netlify](https://stats-card-component-frontend-mentor.netlify.app/)
+- Live Site URL: [Netlify](https://skilled-learning-page.netlify.app/)
 
 ## My process
 
