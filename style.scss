@@ -9,7 +9,8 @@ a:hover {
     text-decoration: none;
 }
 
-p, h5 {
+p,
+h5 {
     margin: 0;
 }
 
@@ -291,10 +292,9 @@ body {
                     line-height: 30px;
                     color: #13183F;
 
-                    @media(max-width:576px)
-                    {
-                     font-size: 20px;
-                     line-height: 25px;
+                    @media(max-width:576px) {
+                        font-size: 20px;
+                        line-height: 25px;
                     }
                 }
 
@@ -326,11 +326,10 @@ body {
                         min-height: 175px;
                     }
 
-                    @media(max-width:576px)
-                    {
-                     min-height: 80px;
-                     font-size: 16px;
-                     line-height: 26px;
+                    @media(max-width:576px) {
+                        min-height: 80px;
+                        font-size: 16px;
+                        line-height: 26px;
                     }
                 }
 
